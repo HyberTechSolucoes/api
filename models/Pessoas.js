@@ -3,15 +3,14 @@
  */
 export default (mongoose, DataType) => {
     return mongoose.model('pessoas', new mongoose.Schema({
-        nome: String,
-        sobrenome: String,
-        email: String,
-        senha: String,
+        nome: { type: String, required: true },
+        sobrenome: { type: String, required: true },
+        email: { type: String, required: true, index: { unique: true } },
+        senha: { type: String, required: true },
         nascimento: Date,
         endereco: [{
-            id: Number,
             rua: String,
-            numero: String,
+            numero: Number,
             bairro: String,
             cep: Number,
             cidade: String,
@@ -22,9 +21,7 @@ export default (mongoose, DataType) => {
             token: String,
             ultimoAcesso: Date,
         }],
-        favoriros: [{ type: Schema.Types.ObjectId, ref: 'Servicos' }],
-        ativo: Boolean,
-        dataInsert: Date,
-        dataUpdate: Date
-    }));    
+        // favoriros: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Servicos' }],
+        ativo: { type: Boolean, default: true }
+    }, { timestamps: true }));
 };
