@@ -3,6 +3,6 @@
  */
 import app from './app';
 
-app.listen(3000, () => {
-    console.log('App sendo executada na porta 3000');
+app.listen(app.get('port'), () => {
+    console.log(`App sendo executada na porta ${app.get('port')}`);
 });

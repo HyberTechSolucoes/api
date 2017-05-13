@@ -7,7 +7,7 @@ export default {
         db: { native_parser: true },
         server: { poolSize: 5 },
         replset: { rs_name: 'miloo' },
-        user: '',
+        user: 'mongodbmiloo',
         pass: ''
     }
 };

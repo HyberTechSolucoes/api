@@ -2,15 +2,14 @@
  * Created by kennedy on 12/05/17.
  */
 import mongoose from 'mongoose';
-import fs from 'fs';
-import path from 'path';
+import Pessoas from '../models/Pessoas';
 
 let database = null;
 
 export default (app) => {
     if (!database) {
         const config = app.config;
-
+        mongoose.Promise = global.Promise;
         mongoose.connect(
             config.uri,
             config.options);
@@ -20,8 +19,13 @@ export default (app) => {
             models: {}
         };
 
+        database.models = {
+            Pessoas: Pessoas(mongoose)
+        };
+
+        return database;
+
+    } else {
         return database;
     }
-
-    return database;
 };
