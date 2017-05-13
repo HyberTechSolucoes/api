@@ -1,7 +1,10 @@
+/**
+ * Created by kennedy on 12/05/17.
+ */
 import supertest from 'supertest';
 import chai from 'chai';
-import setupApp from '../../src/app.js';
+import app from '../../app';
 
-global.setupApp = setupApp;
-global.supertest = supertest;
+global.app = app;
+global.request = supertest(app);
 global.expect = chai.expect;
