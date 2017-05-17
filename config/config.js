@@ -2,7 +2,7 @@
  * Created by kennedy on 12/05/17.
  */
 export default {
-  uri: 'mongodb://localhost/miloo',
+  uri: 'mongodb://localhost/`${process.env.NODE_ENV}`_miloo',
   options: {
     db: { native_parser: true },
     server: { poolSize: 5 },
