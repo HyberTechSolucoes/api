@@ -1,11 +1,13 @@
 /**
  * Created by kennedy on 14/05/17.
  */
-const defaultResponse = (data, statusCode = 200) => ({
+import HttpStatus from 'http-status';
+
+const defaultResponse = (data, statusCode = HttpStatus.OK) => ({
   data,
   statusCode,
 });
-const errorResponse = (message, statusCode = 400) => defaultResponse({
+const errorResponse = (message, statusCode = HttpStatus.BAD_REQUEST) => defaultResponse({
   error: message,
 }, statusCode);
 
@@ -28,20 +30,20 @@ class PessoasController {
 
   create(data) {
     return this.Pessoas.create(data)
-            .then(result => defaultResponse(result, 201))
-            .catch(error => errorResponse(error.message, 422));
+            .then(result => defaultResponse(result, HttpStatus.CREATED))
+            .catch(error => errorResponse(error.message, HttpStatus.UNPROCESSABLE_ENTITY));
   }
 
   update(params, data) {
     return this.Pessoas.update(params, data)
             .then(result => defaultResponse(result))
-            .catch(error => errorResponse(error.message, 422));
+            .catch(error => errorResponse(error.message, HttpStatus.UNPROCESSABLE_ENTITY));
   }
 
   disable(params) {
     return this.Pessoas.update(params, { ativo: false })
-            .then(result => defaultResponse(result, 204))
-            .catch(error => errorResponse(error.message, 422));
+            .then(result => defaultResponse(result, HttpStatus.NO_CONTENT))
+            .catch(error => errorResponse(error.message, HttpStatus.UNPROCESSABLE_ENTITY));
   }
 }
 

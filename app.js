@@ -10,8 +10,11 @@ import pessoasRouter from './routes/pessoas';
 const app = express();
 app.config = config;
 app.datasource = datasource(app);
+
 app.set('port', 3000);
 app.use(bodyParser.json());
+
+// Rotas
 pessoasRouter(app);
 
 export default app;

@@ -2,23 +2,65 @@
  * Created by kennedy on 13/05/17.
  */
 export default mongoose => mongoose.model('pessoas', new mongoose.Schema({
-  nome: { type: String, required: true },
-  email: { type: String, required: true, index: { unique: true } },
-  senha: { type: String, required: true },
-  nascimento: Date,
+  nome: {
+    type: String,
+      required: true
+  },
+  email: {
+    type: String,
+      required: true,
+      index: {
+      unique: true
+    }
+  },
+  senha: {
+    type: String,
+      required: true
+  },
+  nascimento: {
+      type: Date
+  },
   endereco: [{
-    rua: String,
-    numero: Number,
-    bairro: String,
-    cep: Number,
-    cidade: String,
-    estado: String,
-  }, { timestamps: true }],
+    rua: {
+        type: String
+    },
+    numero: {
+        type: Number
+    },
+    bairro: {
+        type: String
+    },
+    cep: {
+        type: Number
+    },
+    cidade: {
+        type: String
+    },
+    estado: {
+        type: String
+    },
+  }, {
+    timestamps: true
+  }],
   dispositivos: [{
-    tipo: { type: String, enum: ['ANDROID', 'IOS'] },
-    token: String,
-    ultimoAcesso: Date,
-  }, { timestamps: true }],
+    tipo: {
+      type: String,
+        enum: ['ANDROID', 'IOS']
+    },
+    token: {
+        type: String
+    },
+    ultimoAcesso: {
+        type: Date
+    },
+  }, {
+    timestamps: true
+  }],
     // favoriros: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Servicos' }],
-  ativo: { type: Boolean, default: true },
-}, { timestamps: true }));
+  ativo: {
+    type: Boolean,
+      default: true
+  },
+}, {
+  timestamps: true
+}));
