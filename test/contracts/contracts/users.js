@@ -1,9 +1,9 @@
 /**
  * Created by kennedy on 18/05/17.
  */
-describe('Routes Pessoas', () => {
-  const Pessoas = app.datasource.models.Pessoas;
-  const defaultPessoa = {
+describe('Routes Users', () => {
+  const Users = app.datasource.models.Users;
+  const defaultUser = {
     nome: 'Nome default',
     email: 'email@default.com.br',
     senha: 'Senha default',
@@ -26,17 +26,17 @@ describe('Routes Pessoas', () => {
   };
 
   beforeEach((done) => {
-    Pessoas
+    Users
             .remove({})
-            .then(() => Pessoas.create(defaultPessoa))
+            .then(() => Users.create(defaultUser))
             .then(() => {
               done();
             });
   });
 
-  describe('Route GET /pessoas', () => {
-    it('Retorna uma lista de Pessoas', (done) => {
-      const listaPessoas = Joi.array().items(Joi.object().keys({
+  describe('Route GET /users', () => {
+    it('Retorna uma lista de Users', (done) => {
+      const listUser = Joi.array().items(Joi.object().keys({
         _id: Joi.string(),
         __v: Joi.number(),
         updatedAt: Joi.date().iso(),
@@ -64,17 +64,17 @@ describe('Routes Pessoas', () => {
         ativo: Joi.boolean(),
       }));
       request
-                .get('/pessoas')
+                .get('/users')
                 .end((err, res) => {
-                  joiAssert(res.body, listaPessoas);
+                  joiAssert(res.body, listUser);
                   done(err);
                 });
     });
   });
 
-  describe('Route GET /pessoas/{email}', () => {
-    it('Retorna uma Pessoa', (done) => {
-      const pessoa = Joi.object().keys({
+  describe('Route GET /users/{email}', () => {
+    it('Retorna um User', (done) => {
+      const user = Joi.object().keys({
         _id: Joi.string(),
         __v: Joi.number(),
         updatedAt: Joi.date().iso(),
@@ -102,17 +102,17 @@ describe('Routes Pessoas', () => {
         ativo: Joi.boolean(),
       });
       request
-                .get('/pessoas/email@default.com.br')
+                .get('/users/email@default.com.br')
                 .end((err, res) => {
-                  joiAssert(res.body, pessoa);
+                  joiAssert(res.body, user);
                   done(err);
                 });
     });
   });
 
-  describe('Route POST /pessoas/', () => {
-    it('Cria uma nova Pessoa', (done) => {
-      const defaultPessoa2 = {
+  describe('Route POST /users/', () => {
+    it('Cria um novo User', (done) => {
+      const defaultUser2 = {
         nome: 'Nome default2',
         email: 'email@default2.com.br',
         senha: 'Senha default2',
@@ -133,7 +133,7 @@ describe('Routes Pessoas', () => {
                 // favoriros: ['123'],
         ativo: true,
       };
-      const pessoa = Joi.object().keys({
+      const user = Joi.object().keys({
         _id: Joi.string(),
         __v: Joi.number(),
         updatedAt: Joi.date().iso(),
@@ -162,18 +162,18 @@ describe('Routes Pessoas', () => {
       });
 
       request
-                .post('/pessoas')
-                .send(defaultPessoa2)
+                .post('/users')
+                .send(defaultUser2)
                 .end((err, res) => {
-                  joiAssert(res.body, pessoa);
+                  joiAssert(res.body, user);
                   done(err);
                 });
     });
   });
 
-  describe('Route PUT /pessoas/{email}', () => {
-    it('Atualiza uma Pessoa', (done) => {
-      const updatePessoa = {
+  describe('Route PUT /users/{email}', () => {
+    it('Atualiza um User', (done) => {
+      const updateUser = {
         nome: 'Nome update',
       };
 
@@ -184,8 +184,8 @@ describe('Routes Pessoas', () => {
       });
 
       request
-                .put('/pessoas/email@default.com.br')
-                .send(updatePessoa)
+                .put('/users/email@default.com.br')
+                .send(updateUser)
                 .end((err, res) => {
                   joiAssert(res.body, updatedCount);
                   done(err);
@@ -193,10 +193,10 @@ describe('Routes Pessoas', () => {
     });
   });
 
-  describe('Route DELETE /pessoas/{email}', () => {
-    it('Remove uma Pessoa (Faz o atributo ATIVO = false)', (done) => {
+  describe('Route DELETE /users/{email}', () => {
+    it('Remove um USer (Faz o atributo ATIVO = false)', (done) => {
       request
-                .delete('/pessoas/email@default.com.br')
+                .delete('/users/email@default.com.br')
                 .end((err, res) => {
                   expect(res.statusCode).to.be.eql(204);
 

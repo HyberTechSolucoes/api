@@ -1,43 +1,43 @@
 /**
  * Created by kennedy on 14/05/17.
  */
-import PessoasController from '../constrollers/pessoas';
+import UsersController from '../constrollers/users';
 
 export default (app) => {
-  const pessoasController = new PessoasController(app.datasource.models.Pessoas);
-  app.route('/pessoas')
+  const usersController = new UsersController(app.datasource.models.Users);
+  app.route('/users')
         .get((req, res) => {
-          pessoasController.getAll()
+          usersController.getAll()
                 .then((response) => {
                   res.status(response.statusCode);
                   res.json(response.data);
                 });
         })
         .post((req, res) => {
-          pessoasController.create(req.body)
+          usersController.create(req.body)
                 .then((response) => {
                   res.status(response.statusCode);
                   res.json(response.data);
                 });
         });
 
-  app.route('/pessoas/:email')
+  app.route('/users/:email')
         .get((req, res) => {
-          pessoasController.getbyEmail(req.params)
+          usersController.getbyEmail(req.params)
                 .then((response) => {
                   res.status(response.statusCode);
                   res.json(response.data);
                 });
         })
         .put((req, res) => {
-          pessoasController.update(req.params, req.body)
+          usersController.update(req.params, req.body)
                 .then((response) => {
                   res.status(response.statusCode);
                   res.json(response.data);
                 });
         })
         .delete((req, res) => {
-          pessoasController.disable(req.params)
+          usersController.disable(req.params)
                 .then(response => res.sendStatus(response.statusCode));
         });
 };

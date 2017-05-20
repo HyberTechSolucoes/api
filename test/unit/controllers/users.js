@@ -1,12 +1,12 @@
 /**
  * Created by kennedy on 14/05/17.
  */
-import PessoasController from '../../../constrollers/pessoas';
+import UsersController from '../../../constrollers/users';
 
-describe('Controllers: Pessoa', () => {
-  describe('Pega todas pessoas: getAll()', () => {
-    it('Retorna uma lista de pessoas', () => {
-      const Pessoas = {
+describe('Controllers: Users', () => {
+  describe('Pega todos User: getAll()', () => {
+    it('Retorna uma lista de Users', () => {
+      const Users = {
         find: td.function(),
       };
       const expectedResponse = [{
@@ -33,17 +33,17 @@ describe('Controllers: Pessoa', () => {
         updated: '14/05/17 14h16min49s UTC',
       }];
 
-      td.when(Pessoas.find({})).thenResolve(expectedResponse);
+      td.when(Users.find({})).thenResolve(expectedResponse);
 
-      const pessoasController = new PessoasController(Pessoas);
-      return pessoasController.getAll()
+      const usersController = new UsersController(Users);
+      return usersController.getAll()
                 .then(response => expect(response.data).to.be.eql(expectedResponse));
     });
   });
 
-  describe('Pega todas pessoas: byEmail()', () => {
-    it('Retorna uma pessoas', () => {
-      const Pessoas = {
+  describe('Pega User: byEmail()', () => {
+    it('Retorna um User', () => {
+      const Users = {
         findOne: td.function(),
       };
       const expectedResponse = [{
@@ -70,21 +70,21 @@ describe('Controllers: Pessoa', () => {
         updated: '14/05/17 14h16min49s UTC',
       }];
 
-      td.when(Pessoas.findOne({ email: 'email@default.com.br' })).thenResolve(expectedResponse);
+      td.when(Users.findOne({ email: 'email@default.com.br' })).thenResolve(expectedResponse);
 
-      const pessoasController = new PessoasController(Pessoas);
-      return pessoasController.getbyEmail({ email: 'email@default.com.br' })
+      const usersController = new UsersController(Users);
+      return usersController.getbyEmail({ email: 'email@default.com.br' })
                 .then(response => expect(response.data).to.be.eql(expectedResponse));
     });
   });
 
-  describe('Cria uma pessoa: create()', () => {
-    it('Retorna a criacao de uma pessoas', () => {
-      const Pessoas = {
+  describe('Cria um User: create()', () => {
+    it('Retorna a criacao de um User', () => {
+      const Users = {
         create: td.function(),
       };
       const requestBody = {
-        nome: 'Teste create Pessoa',
+        nome: 'Teste create User',
       };
       const expectedResponse = [{
         nome: 'Nome default',
@@ -110,10 +110,10 @@ describe('Controllers: Pessoa', () => {
         updated: '14/05/17 14h16min49s UTC',
       }];
 
-      td.when(Pessoas.create(requestBody)).thenResolve(expectedResponse);
+      td.when(Users.create(requestBody)).thenResolve(expectedResponse);
 
-      const pessoasController = new PessoasController(Pessoas);
-      return pessoasController.create(requestBody)
+      const usersController = new UsersController(Users);
+      return usersController.create(requestBody)
                 .then((response) => {
                   expect(response.statusCode).to.be.eql(201);
                   expect(response.data).to.be.eql(expectedResponse);
@@ -121,13 +121,13 @@ describe('Controllers: Pessoa', () => {
     });
   });
 
-  describe('Atualiza uma pessoa: update()', () => {
-    it('Retorna o update de uma pessoa', () => {
-      const Pessoas = {
+  describe('Atualiza um User: update()', () => {
+    it('Retorna o update de um User', () => {
+      const Users = {
         update: td.function(),
       };
       const requestBody = {
-        nome: 'Nome pessoa update',
+        nome: 'Nome users update',
       };
       const expectedResponse = [{
         nome: 'Nome default',
@@ -153,27 +153,27 @@ describe('Controllers: Pessoa', () => {
         updated: '14/05/17 14h16min49s UTC',
       }];
 
-      td.when(Pessoas.update({ email: 'email@default.com.br' }, requestBody)).thenResolve(expectedResponse);
+      td.when(Users.update({ email: 'email@default.com.br' }, requestBody)).thenResolve(expectedResponse);
 
-      const pessoasController = new PessoasController(Pessoas);
-      return pessoasController.update({ email: 'email@default.com.br' }, requestBody)
+      const usersController = new UsersController(Users);
+      return usersController.update({ email: 'email@default.com.br' }, requestBody)
                 .then(response => expect(response.data).to.be.eql(expectedResponse));
     });
   });
 
-  describe('Deleta uma pessoa: disable()', () => {
-    it('Retorna o disable de uma pessoa', () => {
-      const Pessoas = {
+  describe('Deleta um User: disable()', () => {
+    it('Retorna o disable de um User', () => {
+      const Users = {
         update: td.function(),
       };
       const expectedResponse = [{
         ativo: false,
       }];
 
-      td.when(Pessoas.update({ email: 'email@default.com.br' }, { ativo: false })).thenResolve(expectedResponse);
+      td.when(Users.update({ email: 'email@default.com.br' }, { ativo: false })).thenResolve(expectedResponse);
 
-      const pessoasController = new PessoasController(Pessoas);
-      return pessoasController.disable({ email: 'email@default.com.br' })
+      const usersController = new UsersController(Users);
+      return usersController.disable({ email: 'email@default.com.br' })
                 .then(response => expect(response.statusCode).to.be.eql(204));
     });
   });

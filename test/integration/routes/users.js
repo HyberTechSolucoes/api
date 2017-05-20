@@ -1,9 +1,9 @@
 /**
  * Created by kennedy on 12/05/17.
  */
-describe('Routes Pessoas', () => {
-  const Pessoas = app.datasource.models.Pessoas;
-  const defaultPessoa = {
+describe('Routes Users', () => {
+  const Users = app.datasource.models.Users;
+  const defaultUser = {
     nome: 'Nome default',
     email: 'email@default.com.br',
     senha: 'Senha default',
@@ -26,107 +26,107 @@ describe('Routes Pessoas', () => {
   };
 
   beforeEach((done) => {
-    Pessoas
+    Users
             .remove({})
-            .then(() => Pessoas.create(defaultPessoa))
+            .then(() => Users.create(defaultUser))
             .then(() => {
               done();
             });
   });
 
-  describe('Route GET /pessoas', () => {
-    it('Retorna uma lista de Pessoas', (done) => {
+  describe('Route GET /users', () => {
+    it('Retorna uma lista de Users', (done) => {
       request
-                .get('/pessoas')
+                .get('/users')
                 .end((err, res) => {
                   expect(res.body[0].nome)
-                        .to.be.eql(defaultPessoa.nome);
+                        .to.be.eql(defaultUser.nome);
                   expect(res.body[0].email)
-                        .to.be.eql(defaultPessoa.email);
+                        .to.be.eql(defaultUser.email);
                   expect(res.body[0].senha)
-                        .to.be.eql(defaultPessoa.senha);
+                        .to.be.eql(defaultUser.senha);
                     // expect(res.body[0].nascimento)
-                    // .to.be.eql(defaultPessoa.nascimento);
+                    // .to.be.eql(defaultUser.nascimento);
                   expect(res.body[0].endereco[0].id)
-                        .to.be.eql(defaultPessoa.endereco[0].id);
+                        .to.be.eql(defaultUser.endereco[0].id);
                   expect(res.body[0].endereco[0].rua)
-                        .to.be.eql(defaultPessoa.endereco[0].rua);
+                        .to.be.eql(defaultUser.endereco[0].rua);
                   expect(res.body[0].endereco[0].numero)
-                        .to.be.eql(defaultPessoa.endereco[0].numero);
+                        .to.be.eql(defaultUser.endereco[0].numero);
                   expect(res.body[0].endereco[0].bairro)
-                        .to.be.eql(defaultPessoa.endereco[0].bairro);
+                        .to.be.eql(defaultUser.endereco[0].bairro);
                   expect(res.body[0].endereco[0].cep)
-                        .to.be.eql(defaultPessoa.endereco[0].cep);
+                        .to.be.eql(defaultUser.endereco[0].cep);
                   expect(res.body[0].endereco[0].cidade)
-                        .to.be.eql(defaultPessoa.endereco[0].cidade);
+                        .to.be.eql(defaultUser.endereco[0].cidade);
                   expect(res.body[0].endereco[0].estado)
-                        .to.be.eql(defaultPessoa.endereco[0].estado);
+                        .to.be.eql(defaultUser.endereco[0].estado);
                   expect(res.body[0].endereco[0].cidade)
-                        .to.be.eql(defaultPessoa.endereco[0].cidade);
+                        .to.be.eql(defaultUser.endereco[0].cidade);
                   expect(res.body[0].dispositivos[0].tipo)
-                        .to.be.eql(defaultPessoa.dispositivos[0].tipo);
+                        .to.be.eql(defaultUser.dispositivos[0].tipo);
                   expect(res.body[0].dispositivos[0].token)
-                        .to.be.eql(defaultPessoa.dispositivos[0].token);
+                        .to.be.eql(defaultUser.dispositivos[0].token);
                     // expect(res.body[0].dispositivos[0].ultimoAcesso)
-                    // .to.be.eql(defaultPessoa.dispositivos[0].ultimoAcesso);
+                    // .to.be.eql(defaultUser.dispositivos[0].ultimoAcesso);
                     // expect(res.body[0].favoriros[0])
-                    // .to.be.eql(defaultPessoa.favoriros[0]);
+                    // .to.be.eql(defaultUser.favoriros[0]);
                   expect(res.body[0].ativo)
-                        .to.be.eql(defaultPessoa.ativo);
+                        .to.be.eql(defaultUser.ativo);
 
                   done(err);
                 });
     });
   });
 
-  describe('Route GET /pessoas/{email}', () => {
-    it('Retorna uma Pessoa', (done) => {
+  describe('Route GET /users/{email}', () => {
+    it('Retorna um User', (done) => {
       request
-                .get('/pessoas/email@default.com.br')
+                .get('/users/email@default.com.br')
                 .end((err, res) => {
                   expect(res.body.nome)
-                        .to.be.eql(defaultPessoa.nome);
+                        .to.be.eql(defaultUser.nome);
                   expect(res.body.email)
-                        .to.be.eql(defaultPessoa.email);
+                        .to.be.eql(defaultUser.email);
                   expect(res.body.senha)
-                        .to.be.eql(defaultPessoa.senha);
+                        .to.be.eql(defaultUser.senha);
                     // expect(res.body.nascimento)
-                    // .to.be.eql(defaultPessoa.nascimento);
+                    // .to.be.eql(defaultUser.nascimento);
                   expect(res.body.endereco[0].id)
-                        .to.be.eql(defaultPessoa.endereco[0].id);
+                        .to.be.eql(defaultUser.endereco[0].id);
                   expect(res.body.endereco[0].rua)
-                        .to.be.eql(defaultPessoa.endereco[0].rua);
+                        .to.be.eql(defaultUser.endereco[0].rua);
                   expect(res.body.endereco[0].numero)
-                        .to.be.eql(defaultPessoa.endereco[0].numero);
+                        .to.be.eql(defaultUser.endereco[0].numero);
                   expect(res.body.endereco[0].bairro)
-                        .to.be.eql(defaultPessoa.endereco[0].bairro);
+                        .to.be.eql(defaultUser.endereco[0].bairro);
                   expect(res.body.endereco[0].cep)
-                        .to.be.eql(defaultPessoa.endereco[0].cep);
+                        .to.be.eql(defaultUser.endereco[0].cep);
                   expect(res.body.endereco[0].cidade)
-                        .to.be.eql(defaultPessoa.endereco[0].cidade);
+                        .to.be.eql(defaultUser.endereco[0].cidade);
                   expect(res.body.endereco[0].estado)
-                        .to.be.eql(defaultPessoa.endereco[0].estado);
+                        .to.be.eql(defaultUser.endereco[0].estado);
                   expect(res.body.endereco[0].cidade)
-                        .to.be.eql(defaultPessoa.endereco[0].cidade);
+                        .to.be.eql(defaultUser.endereco[0].cidade);
                   expect(res.body.dispositivos[0].tipo)
-                        .to.be.eql(defaultPessoa.dispositivos[0].tipo);
+                        .to.be.eql(defaultUser.dispositivos[0].tipo);
                   expect(res.body.dispositivos[0].token)
-                        .to.be.eql(defaultPessoa.dispositivos[0].token);
+                        .to.be.eql(defaultUser.dispositivos[0].token);
                     // expect(res.body.dispositivos[0].ultimoAcesso)
-                    // .to.be.eql(defaultPessoa.dispositivos[0].ultimoAcesso);
+                    // .to.be.eql(defaultUser.dispositivos[0].ultimoAcesso);
                     // expect(res.body.favoriros[0])
-                    // .to.be.eql(defaultPessoa.favoriros[0]);
+                    // .to.be.eql(defaultUser.favoriros[0]);
                   expect(res.body.ativo)
-                        .to.be.eql(defaultPessoa.ativo);
+                        .to.be.eql(defaultUser.ativo);
 
                   done(err);
                 });
     });
   });
 
-  describe('Route POST /pessoas/', () => {
-    it('Cria uma nova Pessoa', (done) => {
-      const defaultPessoa2 = {
+  describe('Route POST /users/', () => {
+    it('Cria uma novo User', (done) => {
+      const defaultUser2 = {
         nome: 'Nome default2',
         email: 'email@default2.com.br',
         senha: 'Senha default2',
@@ -149,58 +149,58 @@ describe('Routes Pessoas', () => {
       };
 
       request
-                .post('/pessoas')
-                .send(defaultPessoa2)
+                .post('/users')
+                .send(defaultUser2)
                 .end((err, res) => {
                   expect(res.body.nome)
-                        .to.be.eql(defaultPessoa2.nome);
+                        .to.be.eql(defaultUser2.nome);
                   expect(res.body.email)
-                        .to.be.eql(defaultPessoa2.email);
+                        .to.be.eql(defaultUser2.email);
                   expect(res.body.senha)
-                        .to.be.eql(defaultPessoa2.senha);
+                        .to.be.eql(defaultUser2.senha);
                     // expect(res.body.nascimento)
-                    // .to.be.eql(defaultPessoa2.nascimento);
+                    // .to.be.eql(defaultUser2.nascimento);
                   expect(res.body.endereco[0].id)
-                        .to.be.eql(defaultPessoa2.endereco[0].id);
+                        .to.be.eql(defaultUser2.endereco[0].id);
                   expect(res.body.endereco[0].rua)
-                        .to.be.eql(defaultPessoa2.endereco[0].rua);
+                        .to.be.eql(defaultUser2.endereco[0].rua);
                   expect(res.body.endereco[0].numero)
-                        .to.be.eql(defaultPessoa2.endereco[0].numero);
+                        .to.be.eql(defaultUser2.endereco[0].numero);
                   expect(res.body.endereco[0].bairro)
-                        .to.be.eql(defaultPessoa2.endereco[0].bairro);
+                        .to.be.eql(defaultUser2.endereco[0].bairro);
                   expect(res.body.endereco[0].cep)
-                        .to.be.eql(defaultPessoa2.endereco[0].cep);
+                        .to.be.eql(defaultUser2.endereco[0].cep);
                   expect(res.body.endereco[0].cidade)
-                        .to.be.eql(defaultPessoa2.endereco[0].cidade);
+                        .to.be.eql(defaultUser2.endereco[0].cidade);
                   expect(res.body.endereco[0].estado)
-                        .to.be.eql(defaultPessoa2.endereco[0].estado);
+                        .to.be.eql(defaultUser2.endereco[0].estado);
                   expect(res.body.endereco[0].cidade)
-                        .to.be.eql(defaultPessoa2.endereco[0].cidade);
+                        .to.be.eql(defaultUser2.endereco[0].cidade);
                   expect(res.body.dispositivos[0].tipo)
-                        .to.be.eql(defaultPessoa2.dispositivos[0].tipo);
+                        .to.be.eql(defaultUser2.dispositivos[0].tipo);
                   expect(res.body.dispositivos[0].token)
-                        .to.be.eql(defaultPessoa2.dispositivos[0].token);
+                        .to.be.eql(defaultUser2.dispositivos[0].token);
                     // expect(res.body.dispositivos[0].ultimoAcesso)
-                    // .to.be.eql(defaultPessoa2.dispositivos[0].ultimoAcesso);
+                    // .to.be.eql(defaultUser2.dispositivos[0].ultimoAcesso);
                     // expect(res.body.favoriros[0])
-                    // .to.be.eql(defaultPessoa2.favoriros[0]);
+                    // .to.be.eql(defaultUser2.favoriros[0]);
                   expect(res.body.ativo)
-                        .to.be.eql(defaultPessoa2.ativo);
+                        .to.be.eql(defaultUser2.ativo);
 
                   done(err);
                 });
     });
   });
 
-  describe('Route PUT /pessoas/{email}', () => {
-    it('Atualiza uma Pessoa', (done) => {
-      const updatePessoa = {
+  describe('Route PUT /users/{email}', () => {
+    it('Atualiza um User', (done) => {
+      const updateUser = {
         nome: 'Nome update',
       };
 
       request
-                .put('/pessoas/email@default.com.br')
-                .send(updatePessoa)
+                .put('/users/email@default.com.br')
+                .send(updateUser)
                 .end((err, res) => {
                   expect(res.body).to.be.eql({ ok: 1, nModified: 1, n: 1 });
 
@@ -209,10 +209,10 @@ describe('Routes Pessoas', () => {
     });
   });
 
-  describe('Route DELETE /pessoas/{email}', () => {
-    it('Remove uma Pessoa (Faz o atributo ATIVO = false)', (done) => {
+  describe('Route DELETE /users/{email}', () => {
+    it('Remove um User (Faz o atributo ATIVO = false)', (done) => {
       request
-                .delete('/pessoas/email@default.com.br')
+                .delete('/users/email@default.com.br')
                 .end((err, res) => {
                   expect(res.statusCode).to.be.eql(204);
 

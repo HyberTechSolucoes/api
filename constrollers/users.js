@@ -11,40 +11,40 @@ const errorResponse = (message, statusCode = HttpStatus.BAD_REQUEST) => defaultR
   error: message,
 }, statusCode);
 
-class PessoasController {
-  constructor(Pessoas) {
-    this.Pessoas = Pessoas;
+class UsersController {
+  constructor(Users) {
+    this.Users = Users;
   }
 
   getAll() {
-    return this.Pessoas.find({})
+    return this.Users.find({})
             .then(result => defaultResponse(result))
             .catch(error => errorResponse(error.message));
   }
 
   getbyEmail(params) {
-    return this.Pessoas.findOne(params)
+    return this.Users.findOne(params)
             .then(result => defaultResponse(result))
             .catch(error => errorResponse(error.message));
   }
 
   create(data) {
-    return this.Pessoas.create(data)
+    return this.Users.create(data)
             .then(result => defaultResponse(result, HttpStatus.CREATED))
             .catch(error => errorResponse(error.message, HttpStatus.UNPROCESSABLE_ENTITY));
   }
 
   update(params, data) {
-    return this.Pessoas.update(params, data)
+    return this.Users.update(params, data)
             .then(result => defaultResponse(result))
             .catch(error => errorResponse(error.message, HttpStatus.UNPROCESSABLE_ENTITY));
   }
 
   disable(params) {
-    return this.Pessoas.update(params, { ativo: false })
+    return this.Users.update(params, { ativo: false })
             .then(result => defaultResponse(result, HttpStatus.NO_CONTENT))
             .catch(error => errorResponse(error.message, HttpStatus.UNPROCESSABLE_ENTITY));
   }
 }
 
-export default PessoasController;
+export default UsersController;

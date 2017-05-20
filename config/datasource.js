@@ -1,8 +1,8 @@
-/**
+pessoas/**
  * Created by kennedy on 12/05/17.
  */
 import mongoose from 'mongoose';
-import Pessoas from '../models/Pessoas';
+import Users from '../models/users';
 
 let database = null;
 
@@ -20,7 +20,7 @@ export default (app) => {
     };
 
     database.models = {
-      Pessoas: Pessoas(mongoose),
+      Users: Users(mongoose),
     };
 
     return database;
