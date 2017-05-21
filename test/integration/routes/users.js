@@ -4,6 +4,7 @@
 describe('Routes Users', () => {
   const Users = app.datasource.models.Users;
   const defaultUser = {
+    _id: '59221411d1df91548c875454',
     nome: 'Nome default',
     email: 'email@default.com.br',
     senha: 'Senha default',

@@ -1,8 +1,9 @@
-pessoas/**
+/**
  * Created by kennedy on 12/05/17.
  */
 import mongoose from 'mongoose';
 import Users from '../models/users';
+import Jobs from '../models/jobs';
 
 let database = null;
 
@@ -21,6 +22,7 @@ export default (app) => {
 
     database.models = {
       Users: Users(mongoose),
+      Jobs: Jobs(mongoose),
     };
 
     return database;

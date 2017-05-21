@@ -6,6 +6,7 @@ import bodyParser from 'body-parser';
 import config from './config/config';
 import datasource from './config/datasource';
 import usersRouter from './routes/users';
+import jobsRouter from './routes/jobs';
 
 const app = express();
 app.config = config;
@@ -16,5 +17,6 @@ app.use(bodyParser.json());
 
 // Rotas
 usersRouter(app);
+jobsRouter(app);
 
 export default app;
