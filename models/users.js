@@ -2,7 +2,7 @@
  * Created by kennedy on 13/05/17.
  */
 export default mongoose => mongoose.model('users', new mongoose.Schema({
-  nome: {
+  name: {
     type: String,
     required: true,
   },
@@ -13,51 +13,50 @@ export default mongoose => mongoose.model('users', new mongoose.Schema({
       unique: true,
     },
   },
-  senha: {
+  password: {
     type: String,
     required: true,
   },
-  nascimento: {
+  birthday: {
     type: Date,
   },
-  endereco: [{
-    rua: {
+  address: [{
+    street: {
       type: String,
     },
-    numero: {
+    number: {
       type: Number,
     },
-    bairro: {
+      district: {
       type: String,
     },
-    cep: {
+    zipcode: {
       type: Number,
     },
-    cidade: {
+    city: {
       type: String,
     },
-    estado: {
+    state: {
       type: String,
     },
   }, {
     timestamps: true,
   }],
-  dispositivos: [{
-    tipo: {
+  devices: [{
+    type: {
       type: String,
       enum: ['ANDROID', 'IOS'],
     },
     token: {
       type: String,
     },
-    ultimoAcesso: {
+      lastAcess: {
       type: Date,
     },
   }, {
     timestamps: true,
   }],
-    // favoriros: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Servicos' }],
-  ativo: {
+  active: {
     type: Boolean,
     default: true,
   },

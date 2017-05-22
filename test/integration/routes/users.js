@@ -5,25 +5,25 @@ describe('Routes Users', () => {
   const Users = app.datasource.models.Users;
   const defaultUser = {
     _id: '59221411d1df91548c875454',
-    nome: 'Nome default',
+    name: 'Nome default',
     email: 'email@default.com.br',
-    senha: 'Senha default',
-    nascimento: '03/22/1996',
-    endereco: [{
-      rua: 'Rua default',
-      numero: 123,
-      bairro: 'Bairro default',
-      cep: 12345678,
-      cidade: 'Cidade default',
-      estado: 'AB',
+    password: 'Senha default',
+    birthday: '03/22/1996',
+    address: [{
+      street: 'Rua default',
+      number: 123,
+      district: 'Bairro default',
+      zipcode: 12345678,
+      city: 'Cidade default',
+      state: 'AB',
     }],
-    dispositivos: [{
-      tipo: 'ANDROID',
+    devices: [{
+      type: 'ANDROID',
       token: 'Token default',
-      ultimoAcesso: new Date('03/22/1996 10:10'),
+      lastAcess: new Date('03/22/1996 10:10'),
     }],
         // favoriros: ['123'],
-    ativo: true,
+    active: true,
   };
 
   beforeEach((done) => {
@@ -40,40 +40,40 @@ describe('Routes Users', () => {
       request
                 .get('/users')
                 .end((err, res) => {
-                  expect(res.body[0].nome)
-                        .to.be.eql(defaultUser.nome);
+                  expect(res.body[0].name)
+                        .to.be.eql(defaultUser.name);
                   expect(res.body[0].email)
                         .to.be.eql(defaultUser.email);
-                  expect(res.body[0].senha)
-                        .to.be.eql(defaultUser.senha);
-                    // expect(res.body[0].nascimento)
-                    // .to.be.eql(defaultUser.nascimento);
-                  expect(res.body[0].endereco[0].id)
-                        .to.be.eql(defaultUser.endereco[0].id);
-                  expect(res.body[0].endereco[0].rua)
-                        .to.be.eql(defaultUser.endereco[0].rua);
-                  expect(res.body[0].endereco[0].numero)
-                        .to.be.eql(defaultUser.endereco[0].numero);
-                  expect(res.body[0].endereco[0].bairro)
-                        .to.be.eql(defaultUser.endereco[0].bairro);
-                  expect(res.body[0].endereco[0].cep)
-                        .to.be.eql(defaultUser.endereco[0].cep);
-                  expect(res.body[0].endereco[0].cidade)
-                        .to.be.eql(defaultUser.endereco[0].cidade);
-                  expect(res.body[0].endereco[0].estado)
-                        .to.be.eql(defaultUser.endereco[0].estado);
-                  expect(res.body[0].endereco[0].cidade)
-                        .to.be.eql(defaultUser.endereco[0].cidade);
-                  expect(res.body[0].dispositivos[0].tipo)
-                        .to.be.eql(defaultUser.dispositivos[0].tipo);
-                  expect(res.body[0].dispositivos[0].token)
-                        .to.be.eql(defaultUser.dispositivos[0].token);
-                    // expect(res.body[0].dispositivos[0].ultimoAcesso)
-                    // .to.be.eql(defaultUser.dispositivos[0].ultimoAcesso);
+                  expect(res.body[0].password)
+                        .to.be.eql(defaultUser.password);
+                    // expect(res.body[0].birthday)
+                    // .to.be.eql(defaultUser.birthday);
+                  expect(res.body[0].address[0].id)
+                        .to.be.eql(defaultUser.address[0].id);
+                  expect(res.body[0].address[0].street)
+                        .to.be.eql(defaultUser.address[0].street);
+                  expect(res.body[0].address[0].number)
+                        .to.be.eql(defaultUser.address[0].number);
+                  expect(res.body[0].address[0].district)
+                        .to.be.eql(defaultUser.address[0].district);
+                  expect(res.body[0].address[0].zipcode)
+                        .to.be.eql(defaultUser.address[0].zipcode);
+                  expect(res.body[0].address[0].city)
+                        .to.be.eql(defaultUser.address[0].city);
+                  expect(res.body[0].address[0].state)
+                        .to.be.eql(defaultUser.address[0].state);
+                  expect(res.body[0].address[0].city)
+                        .to.be.eql(defaultUser.address[0].city);
+                  expect(res.body[0].devices[0].type)
+                        .to.be.eql(defaultUser.devices[0].type);
+                  expect(res.body[0].devices[0].token)
+                        .to.be.eql(defaultUser.devices[0].token);
+                    // expect(res.body[0].devices[0].lastAcess)
+                    // .to.be.eql(defaultUser.devices[0].lastAcess);
                     // expect(res.body[0].favoriros[0])
                     // .to.be.eql(defaultUser.favoriros[0]);
-                  expect(res.body[0].ativo)
-                        .to.be.eql(defaultUser.ativo);
+                  expect(res.body[0].active)
+                        .to.be.eql(defaultUser.active);
 
                   done(err);
                 });
@@ -85,40 +85,40 @@ describe('Routes Users', () => {
       request
                 .get('/users/email@default.com.br')
                 .end((err, res) => {
-                  expect(res.body.nome)
-                        .to.be.eql(defaultUser.nome);
+                  expect(res.body.name)
+                        .to.be.eql(defaultUser.name);
                   expect(res.body.email)
                         .to.be.eql(defaultUser.email);
-                  expect(res.body.senha)
-                        .to.be.eql(defaultUser.senha);
-                    // expect(res.body.nascimento)
-                    // .to.be.eql(defaultUser.nascimento);
-                  expect(res.body.endereco[0].id)
-                        .to.be.eql(defaultUser.endereco[0].id);
-                  expect(res.body.endereco[0].rua)
-                        .to.be.eql(defaultUser.endereco[0].rua);
-                  expect(res.body.endereco[0].numero)
-                        .to.be.eql(defaultUser.endereco[0].numero);
-                  expect(res.body.endereco[0].bairro)
-                        .to.be.eql(defaultUser.endereco[0].bairro);
-                  expect(res.body.endereco[0].cep)
-                        .to.be.eql(defaultUser.endereco[0].cep);
-                  expect(res.body.endereco[0].cidade)
-                        .to.be.eql(defaultUser.endereco[0].cidade);
-                  expect(res.body.endereco[0].estado)
-                        .to.be.eql(defaultUser.endereco[0].estado);
-                  expect(res.body.endereco[0].cidade)
-                        .to.be.eql(defaultUser.endereco[0].cidade);
-                  expect(res.body.dispositivos[0].tipo)
-                        .to.be.eql(defaultUser.dispositivos[0].tipo);
-                  expect(res.body.dispositivos[0].token)
-                        .to.be.eql(defaultUser.dispositivos[0].token);
-                    // expect(res.body.dispositivos[0].ultimoAcesso)
-                    // .to.be.eql(defaultUser.dispositivos[0].ultimoAcesso);
+                  expect(res.body.password)
+                        .to.be.eql(defaultUser.password);
+                    // expect(res.body.birthday)
+                    // .to.be.eql(defaultUser.birthday);
+                  expect(res.body.address[0].id)
+                        .to.be.eql(defaultUser.address[0].id);
+                  expect(res.body.address[0].street)
+                        .to.be.eql(defaultUser.address[0].street);
+                  expect(res.body.address[0].number)
+                        .to.be.eql(defaultUser.address[0].number);
+                  expect(res.body.address[0].district)
+                        .to.be.eql(defaultUser.address[0].district);
+                  expect(res.body.address[0].zipcode)
+                        .to.be.eql(defaultUser.address[0].zipcode);
+                  expect(res.body.address[0].city)
+                        .to.be.eql(defaultUser.address[0].city);
+                  expect(res.body.address[0].state)
+                        .to.be.eql(defaultUser.address[0].state);
+                  expect(res.body.address[0].city)
+                        .to.be.eql(defaultUser.address[0].city);
+                  expect(res.body.devices[0].type)
+                        .to.be.eql(defaultUser.devices[0].type);
+                  expect(res.body.devices[0].token)
+                        .to.be.eql(defaultUser.devices[0].token);
+                    // expect(res.body.devices[0].lastAcess)
+                    // .to.be.eql(defaultUser.devices[0].lastAcess);
                     // expect(res.body.favoriros[0])
                     // .to.be.eql(defaultUser.favoriros[0]);
-                  expect(res.body.ativo)
-                        .to.be.eql(defaultUser.ativo);
+                  expect(res.body.active)
+                        .to.be.eql(defaultUser.active);
 
                   done(err);
                 });
@@ -128,65 +128,63 @@ describe('Routes Users', () => {
   describe('Route POST /users/', () => {
     it('Cria uma novo User', (done) => {
       const defaultUser2 = {
-        nome: 'Nome default2',
+        name: 'Nome default2',
         email: 'email@default2.com.br',
-        senha: 'Senha default2',
-        nascimento: '03/22/1996',
-        endereco: [{
-          rua: 'Rua default2',
-          numero: 123,
-          bairro: 'Bairro default2',
-          cep: 12345678,
-          cidade: 'Cidade default2',
-          estado: 'AB',
+        password: 'Senha default2',
+        birthday: '03/22/1996',
+        address: [{
+          street: 'Rua default2',
+          number: 123,
+          district: 'Bairro default2',
+          zipcode: 12345678,
+          city: 'Cidade default2',
+          state: 'AB',
         }],
-        dispositivos: [{
-          tipo: 'ANDROID',
+        devices: [{
+          type: 'ANDROID',
           token: 'Token default2',
-          ultimoAcesso: new Date('03/22/1996 10:10'),
+          lastAcess: new Date('03/22/1996 10:10'),
         }],
                 // favoriros: ['123'],
-        ativo: true,
+        active: true,
       };
 
       request
                 .post('/users')
                 .send(defaultUser2)
                 .end((err, res) => {
-                  expect(res.body.nome)
-                        .to.be.eql(defaultUser2.nome);
+                  expect(res.body.name)
+                        .to.be.eql(defaultUser2.name);
                   expect(res.body.email)
                         .to.be.eql(defaultUser2.email);
-                  expect(res.body.senha)
-                        .to.be.eql(defaultUser2.senha);
-                    // expect(res.body.nascimento)
-                    // .to.be.eql(defaultUser2.nascimento);
-                  expect(res.body.endereco[0].id)
-                        .to.be.eql(defaultUser2.endereco[0].id);
-                  expect(res.body.endereco[0].rua)
-                        .to.be.eql(defaultUser2.endereco[0].rua);
-                  expect(res.body.endereco[0].numero)
-                        .to.be.eql(defaultUser2.endereco[0].numero);
-                  expect(res.body.endereco[0].bairro)
-                        .to.be.eql(defaultUser2.endereco[0].bairro);
-                  expect(res.body.endereco[0].cep)
-                        .to.be.eql(defaultUser2.endereco[0].cep);
-                  expect(res.body.endereco[0].cidade)
-                        .to.be.eql(defaultUser2.endereco[0].cidade);
-                  expect(res.body.endereco[0].estado)
-                        .to.be.eql(defaultUser2.endereco[0].estado);
-                  expect(res.body.endereco[0].cidade)
-                        .to.be.eql(defaultUser2.endereco[0].cidade);
-                  expect(res.body.dispositivos[0].tipo)
-                        .to.be.eql(defaultUser2.dispositivos[0].tipo);
-                  expect(res.body.dispositivos[0].token)
-                        .to.be.eql(defaultUser2.dispositivos[0].token);
-                    // expect(res.body.dispositivos[0].ultimoAcesso)
-                    // .to.be.eql(defaultUser2.dispositivos[0].ultimoAcesso);
-                    // expect(res.body.favoriros[0])
-                    // .to.be.eql(defaultUser2.favoriros[0]);
-                  expect(res.body.ativo)
-                        .to.be.eql(defaultUser2.ativo);
+                  expect(res.body.password)
+                        .to.be.eql(defaultUser2.password);
+                    // expect(res.body.birthday)
+                    // .to.be.eql(defaultUser2.birthday);
+                  expect(res.body.address[0].id)
+                        .to.be.eql(defaultUser2.address[0].id);
+                  expect(res.body.address[0].street)
+                        .to.be.eql(defaultUser2.address[0].street);
+                  expect(res.body.address[0].number)
+                        .to.be.eql(defaultUser2.address[0].number);
+                  expect(res.body.address[0].district)
+                        .to.be.eql(defaultUser2.address[0].district);
+                  expect(res.body.address[0].zipcode)
+                        .to.be.eql(defaultUser2.address[0].zipcode);
+                  expect(res.body.address[0].city)
+                        .to.be.eql(defaultUser2.address[0].city);
+                  expect(res.body.address[0].state)
+                        .to.be.eql(defaultUser2.address[0].state);
+                  expect(res.body.address[0].city)
+                        .to.be.eql(defaultUser2.address[0].city);
+                  expect(res.body.devices[0].type)
+                        .to.be.eql(defaultUser2.devices[0].type);
+                  expect(res.body.devices[0].token)
+                        .to.be.eql(defaultUser2.devices[0].token);
+                    // expect(res.body.devices[0].lastAcess)
+                    // .to.be.eql(defaultUser2.devices[0].lastAcess);
+                  expect(res.body.active)
+                        .to.be.eql(defaultUser2.active);
 
                   done(err);
                 });
@@ -196,7 +194,7 @@ describe('Routes Users', () => {
   describe('Route PUT /users/{email}', () => {
     it('Atualiza um User', (done) => {
       const updateUser = {
-        nome: 'Nome update',
+        name: 'Nome update',
       };
 
       request

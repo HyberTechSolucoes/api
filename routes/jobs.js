@@ -1,7 +1,7 @@
 /**
  * Created by kennedy on 14/05/17.
  */
-import JobsController from '../constrollers/jobs';
+import JobsController from '../controllers/jobs';
 
 export default (app) => {
   const jobsController = new JobsController(app.datasource.models.Jobs);
