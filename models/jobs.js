@@ -17,53 +17,39 @@ export default mongoose => mongoose.model('jobs', new mongoose.Schema({
     type: String,
     required: true,
   },
+  paymentType: {
+    type: String,
+    enum: ['CREDIT', 'DEBIT', 'MONEY'],
+    required: true,
+    defalt: 'MONEY',
+  },
   hours: {
     monday: {
       open: String,
-      intervalBegin: String,
-      intervalFinish: String,
       close: String,
     },
     tuesday: {
       open: String,
-      intervalBegin: String,
-      intervalFinish: String,
       close: String,
     },
     wednesday: {
       open: String,
-      intervalBegin: String,
-      intervalFinish: String,
       close: String,
     },
     thursday: {
       open: String,
-      intervalBegin: String,
-      intervalFinish: String,
       close: String,
     },
     friday: {
       open: String,
-      intervalBegin: String,
-      intervalFinish: String,
       close: String,
     },
     saturday: {
       open: String,
-      intervalBegin: String,
-      intervalFinish: String,
       close: String,
     },
     sunday: {
       open: String,
-      intervalBegin: String,
-      intervalFinish: String,
-      close: String,
-    },
-    holidays: {
-      open: String,
-      intervalBegin: String,
-      intervalFinish: String,
       close: String,
     },
   },
@@ -81,9 +67,31 @@ export default mongoose => mongoose.model('jobs', new mongoose.Schema({
       required: true,
     },
     attendance: {
-      type: String,
-      enum: ['RESIDENCE', 'ESTABLISHMENT', 'ONLINE'],
-      required: true,
+      type: {
+        type: String,
+        enum: ['RESIDENCE', 'ESTABLISHMENT', 'ONLINE'],
+        required: true,
+      },
+      address: {
+        street: {
+          type: String,
+        },
+        number: {
+          type: Number,
+        },
+        district: {
+          type: String,
+        },
+        zipcode: {
+          type: Number,
+        },
+        city: {
+          type: String,
+        },
+        state: {
+          type: String,
+        },
+      },
     },
         // address: {
         //   type: mongoose.Schema.Types.ObjectId, ref: 'Users.endereco'

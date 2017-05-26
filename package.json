@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js",
+    "start": "NODE_ENV=test babel-node index.js",
     "test": "npm run test-unit && npm run test-integration && npm run test-contract",
     "test-integration": "NODE_ENV=test mocha --opts test/integration/mocha.opts test/integration/**/*.js",
     "test-unit": "NODE_ENV=test mocha --opts test/unit/mocha.opts test/unit/**/*.js",

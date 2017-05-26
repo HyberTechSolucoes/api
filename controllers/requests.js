@@ -1,5 +1,5 @@
 /**
- * Created by kennedy on 14/05/17.
+ * Created by kennedy on 23/05/17.
  */
 import HttpStatus from 'http-status';
 
@@ -11,40 +11,40 @@ const errorResponse = (message, statusCode = HttpStatus.BAD_REQUEST) => defaultR
   error: message,
 }, statusCode);
 
-class UsersController {
-  constructor(Users) {
-    this.Users = Users;
+class RequestsController {
+  constructor(Requests) {
+    this.Requests = Requests;
   }
 
   getAll() {
-    return this.Users.find({})
+    return this.Requests.find({})
             .then(result => defaultResponse(result))
             .catch(error => errorResponse(error.message));
   }
 
-  getbyEmail(params) {
-    return this.Users.findOne(params)
+  getbyUserId(params) {
+    return this.Requests.findOne(params)
             .then(result => defaultResponse(result))
             .catch(error => errorResponse(error.message));
   }
 
   create(data) {
-    return this.Users.create(data)
+    return this.Requests.create(data)
             .then(result => defaultResponse(result, HttpStatus.CREATED))
             .catch(error => errorResponse(error.message, HttpStatus.UNPROCESSABLE_ENTITY));
   }
 
   update(params, data) {
-    return this.Users.update(params, data)
+    return this.Requests.update(params, data)
             .then(result => defaultResponse(result))
             .catch(error => errorResponse(error.message, HttpStatus.UNPROCESSABLE_ENTITY));
   }
 
-  disable(params) {
-    return this.Users.update(params, { active: false })
-            .then(result => defaultResponse(result, HttpStatus.NO_CONTENT))
-            .catch(error => errorResponse(error.message, HttpStatus.UNPROCESSABLE_ENTITY));
-  }
+    // disable(params) {
+    //     return this.Requests.update(params, { works: { status: 'DISABLED' }})
+    //         .then(result => defaultResponse(result, HttpStatus.NO_CONTENT))
+    //         .catch(error => errorResponse(error.message, HttpStatus.UNPROCESSABLE_ENTITY));
+    // }
 }
 
-export default UsersController;
+export default RequestsController;

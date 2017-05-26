@@ -21,8 +21,12 @@ class JobsController {
             .then(result => defaultResponse(result))
             .catch(error => errorResponse(error.message));
   }
-
   getbyUserId(params) {
+    return this.Jobs.findOne(params)
+            .then(result => defaultResponse(result))
+            .catch(error => errorResponse(error.message));
+  }
+  getAllByCategory(params) {
     return this.Jobs.findOne(params)
             .then(result => defaultResponse(result))
             .catch(error => errorResponse(error.message));

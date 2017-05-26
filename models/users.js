@@ -27,7 +27,7 @@ export default mongoose => mongoose.model('users', new mongoose.Schema({
     number: {
       type: Number,
     },
-      district: {
+    district: {
       type: String,
     },
     zipcode: {
@@ -50,7 +50,7 @@ export default mongoose => mongoose.model('users', new mongoose.Schema({
     token: {
       type: String,
     },
-      lastAcess: {
+    lastAcess: {
       type: Date,
     },
   }, {

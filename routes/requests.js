@@ -1,52 +1,43 @@
 /**
- * Created by kennedy on 14/05/17.
+ * Created by kennedy on 23/05/17.
  */
-import JobsController from '../controllers/jobs';
+import RequestsController from '../controllers/requests';
 
 export default (app) => {
-  const jobsController = new JobsController(app.datasource.models.Jobs);
-  app.route('/jobs')
+  const requestsController = new RequestsController(app.datasource.models.Requests);
+  app.route('/requests')
         .get((req, res) => {
-          jobsController.getAll()
+          requestsController.getAll()
                 .then((response) => {
                   res.status(response.statusCode);
                   res.json(response.data);
                 });
         })
         .post((req, res) => {
-          jobsController.create(req.body)
+          requestsController.create(req.body)
                 .then((response) => {
                   res.status(response.statusCode);
                   res.json(response.data);
                 });
         });
 
-  app.route('/jobs/:user')
+  app.route('/requests/:user')
         .get((req, res) => {
-          jobsController.getbyUserId(req.params)
+          requestsController.getbyUserId(req.params)
                 .then((response) => {
                   res.status(response.statusCode);
                   res.json(response.data);
                 });
         })
         .put((req, res) => {
-          jobsController.update(req.params, req.body)
+          requestsController.update(req.params, req.body)
                 .then((response) => {
                   res.status(response.statusCode);
                   res.json(response.data);
                 });
         })
         .delete((req, res) => {
-          jobsController.disable(req.params)
+          requestsController.disable(req.params)
                 .then(response => res.sendStatus(response.statusCode));
-        });
-
-    app.route('/jobs/find/category/:category')
-        .get((req, res) => {
-            jobsController.getAllByCategory(req.params)
-                .then((response) => {
-                    res.status(response.statusCode);
-                    res.json(response.data);
-                });
         });
 };

@@ -10,25 +10,25 @@ describe('Controllers: Users', () => {
         find: td.function(),
       };
       const expectedResponse = [{
-        nome: 'Nome default',
+        name: 'Nome default',
         email: 'email@default.com.br',
-        senha: 'Senha default',
+        password: 'Senha default',
                 // nascimento: '03/22/1996',
-        endereco: [{
-          rua: 'Rua default',
-          numero: 123,
-          bairro: 'Bairro default',
-          cep: 12345678,
-          cidade: 'Cidade default',
-          estado: 'AB',
+        address: [{
+          street: 'Rua default',
+          number: 123,
+          district: 'Bairro default',
+          zipcode: 12345678,
+          city: 'Cidade default',
+          state: 'AB',
         }],
-        dispositivos: [{
-          tipo: 'ANDROID',
+        devices: [{
+          type: 'ANDROID',
           token: 'Token default',
-          ultimoAcesso: new Date('03/22/1996 10:10'),
+          lastAcess: new Date('03/22/1996 10:10'),
         }],
                 // favoriros: ['123'],
-        ativo: true,
+        active: true,
         createdAt: '14/05/17 14h16min49s UTC',
         updated: '14/05/17 14h16min49s UTC',
       }];
@@ -47,25 +47,25 @@ describe('Controllers: Users', () => {
         findOne: td.function(),
       };
       const expectedResponse = [{
-        nome: 'Nome default',
+        name: 'Nome default',
         email: 'email@default.com.br',
-        senha: 'Senha default',
+        password: 'Senha default',
                 // nascimento: '03/22/1996',
-        endereco: [{
-          rua: 'Rua default',
-          numero: 123,
-          bairro: 'Bairro default',
-          cep: 12345678,
-          cidade: 'Cidade default',
-          estado: 'AB',
+        address: [{
+          street: 'Rua default',
+          number: 123,
+          district: 'Bairro default',
+          zipcode: 12345678,
+          city: 'Cidade default',
+          state: 'AB',
         }],
-        dispositivos: [{
-          tipo: 'ANDROID',
+        devices: [{
+          type: 'ANDROID',
           token: 'Token default',
-          ultimoAcesso: new Date('03/22/1996 10:10'),
+          lastAcess: new Date('03/22/1996 10:10'),
         }],
                 // favoriros: ['123'],
-        ativo: true,
+        active: true,
         createdAt: '14/05/17 14h16min49s UTC',
         updated: '14/05/17 14h16min49s UTC',
       }];
@@ -84,28 +84,28 @@ describe('Controllers: Users', () => {
         create: td.function(),
       };
       const requestBody = {
-        nome: 'Teste create User',
+        name: 'Teste create User',
       };
       const expectedResponse = [{
-        nome: 'Nome default',
+        name: 'Nome default',
         email: 'email@default.com.br',
-        senha: 'Senha default',
+        password: 'Senha default',
                 // nascimento: '03/22/1996',
-        endereco: [{
-          rua: 'Rua default',
-          numero: 123,
-          bairro: 'Bairro default',
-          cep: 12345678,
-          cidade: 'Cidade default',
-          estado: 'AB',
+        address: [{
+          street: 'Rua default',
+          number: 123,
+          district: 'Bairro default',
+          zipcode: 12345678,
+          city: 'Cidade default',
+          state: 'AB',
         }],
-        dispositivos: [{
-          tipo: 'ANDROID',
+        devices: [{
+          type: 'ANDROID',
           token: 'Token default',
-          ultimoAcesso: new Date('03/22/1996 10:10'),
+          lastAcess: new Date('03/22/1996 10:10'),
         }],
                 // favoriros: ['123'],
-        ativo: true,
+        active: true,
         createdAt: '14/05/17 14h16min49s UTC',
         updated: '14/05/17 14h16min49s UTC',
       }];
@@ -127,28 +127,28 @@ describe('Controllers: Users', () => {
         update: td.function(),
       };
       const requestBody = {
-        nome: 'Nome users update',
+        name: 'Nome users update',
       };
       const expectedResponse = [{
-        nome: 'Nome default',
+        name: 'Nome default',
         email: 'email@default.com.br',
-        senha: 'Senha default',
+        password: 'Senha default',
                 // nascimento: '03/22/1996',
-        endereco: [{
-          rua: 'Rua default',
-          numero: 123,
-          bairro: 'Bairro default',
-          cep: 12345678,
-          cidade: 'Cidade default',
-          estado: 'AB',
+        address: [{
+          street: 'Rua default',
+          number: 123,
+          district: 'Bairro default',
+          zipcode: 12345678,
+          city: 'Cidade default',
+          state: 'AB',
         }],
-        dispositivos: [{
-          tipo: 'ANDROID',
+        devices: [{
+          type: 'ANDROID',
           token: 'Token default',
-          ultimoAcesso: new Date('03/22/1996 10:10'),
+          lastAcess: new Date('03/22/1996 10:10'),
         }],
                 // favoriros: ['123'],
-        ativo: true,
+        active: true,
         createdAt: '14/05/17 14h16min49s UTC',
         updated: '14/05/17 14h16min49s UTC',
       }];
@@ -167,10 +167,10 @@ describe('Controllers: Users', () => {
         update: td.function(),
       };
       const expectedResponse = [{
-        ativo: false,
+        active: false,
       }];
 
-      td.when(Users.update({ email: 'email@default.com.br' }, { ativo: false })).thenResolve(expectedResponse);
+      td.when(Users.update({ email: 'email@default.com.br' }, { active: false })).thenResolve(expectedResponse);
 
       const usersController = new UsersController(Users);
       return usersController.disable({ email: 'email@default.com.br' })

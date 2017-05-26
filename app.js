@@ -7,6 +7,7 @@ import config from './config/config';
 import datasource from './config/datasource';
 import usersRouter from './routes/users';
 import jobsRouter from './routes/jobs';
+import requestsRouter from './routes/requests';
 
 const app = express();
 app.config = config;
@@ -18,5 +19,6 @@ app.use(bodyParser.json());
 // Rotas
 usersRouter(app);
 jobsRouter(app);
+requestsRouter(app);
 
 export default app;
