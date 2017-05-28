@@ -31,6 +31,14 @@ class JobsController {
             .then(result => defaultResponse(result))
             .catch(error => errorResponse(error.message));
   }
+  getAllByCategoryWithFilters(params, query) {
+    console.log(JSON.stringify(params), JSON.stringify(query));
+
+    return this.Jobs.find(params)
+            .sort(query)
+            .then(result => defaultResponse(result))
+            .catch(error => errorResponse(error.message));
+  }
 
   create(data) {
     return this.Jobs.create(data)

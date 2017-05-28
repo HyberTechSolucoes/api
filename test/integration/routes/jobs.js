@@ -5,9 +5,9 @@ describe('Routes Jobs', () => {
   const Jobs = app.datasource.models.Jobs;
     const defaultJob01 = {
         user: '5921ea44f28eca1caba16c5c',
-        fantasyName: 'André Rosa Cabeleireiro',
-        job: 'Corte e ',
-        category: 'INFORMATICA',
+        fantasyName: 'André Rosa',
+        job: 'Cabeleireiro',
+        category: 'BELEZA',
         paymentType: 'CREDIT',
         hours: {
             monday: {
@@ -31,43 +31,43 @@ describe('Routes Jobs', () => {
                 close: '16:00',
             },
             saturday: {
-                open: '08:00',
-                close: '16:00',
+                open: '00:00',
+                close: '00:00',
             },
             sunday: {
-                open: '08:00',
-                close: '16:00',
+                open: '00:00',
+                close: '00:00',
             },
         },
         works: [{
-            name: 'jobs.name',
-            description: 'description',
+            name: 'Corte de cabelo',
+            description: 'Descrição do serviço',
             price: 100,
             attendance: {
                 type: 'RESIDENCE',
                 address: {
-                    street: 'Rua default',
+                    street: 'Rua ...',
                     number: 123,
-                    district: 'Bairro default',
+                    district: 'Bairro ...',
                     zipcode: 12345678,
-                    city: 'Cidade default',
-                    state: 'AB',
+                    city: 'Cidade ...',
+                    state: 'SP',
                 },
             },
-            tags: ['TAGS'],
+            tags: ['CABELEIREIRO', 'CORTE DE CABELO', 'CABELO'],
             feedbacks: [{
                 user: '5921ea44f28eca1caba16c5c',
                 stars: 4.5,
-                comment: 'feedbacks.comment',
+                comment: 'Muito bom!',
             }],
         }],
         status: 'ACTIVE',
     };
-    const defaultJob01 = {
-        user: '5921ea44f28eca1caba16c5c',
-        fantasyName: 'fantasyName',
-        job: 'job',
-        category: 'category',
+    const defaultJob02 = {
+        user: '2921ea44f28eca1caba16c5c',
+        fantasyName: 'Danillo Lange',
+        job: 'Encanador',
+        category: 'CONSTRUCAO',
         paymentType: 'CREDIT',
         hours: {
             monday: {
@@ -91,34 +91,34 @@ describe('Routes Jobs', () => {
                 close: '16:00',
             },
             saturday: {
-                open: '08:00',
-                close: '16:00',
+                open: '00:00',
+                close: '00:00',
             },
             sunday: {
-                open: '08:00',
-                close: '16:00',
+                open: '00:00',
+                close: '00:00',
             },
         },
         works: [{
-            name: 'jobs.name',
-            description: 'description',
+            name: 'Conserto de encanamentos',
+            description: 'Descrição do serviço',
             price: 100,
             attendance: {
                 type: 'RESIDENCE',
                 address: {
-                    street: 'Rua default',
+                    street: 'Rua ...',
                     number: 123,
-                    district: 'Bairro default',
+                    district: 'Bairro ...',
                     zipcode: 12345678,
-                    city: 'Cidade default',
-                    state: 'AB',
+                    city: 'Cidade ...',
+                    state: 'SP',
                 },
             },
-            tags: ['TAGS'],
+            tags: ['ENCANAMENTOS', 'CANO FURADO'],
             feedbacks: [{
                 user: '5921ea44f28eca1caba16c5c',
                 stars: 4.5,
-                comment: 'feedbacks.comment',
+                comment: 'Muito bom!',
             }],
         }],
         status: 'ACTIVE',
@@ -128,6 +128,7 @@ describe('Routes Jobs', () => {
     Jobs
             .remove({})
             .then(() => Jobs.create(defaultJob01))
+            .then(() => Jobs.create(defaultJob02))
             .then(() => {
               done();
             });
@@ -222,7 +223,6 @@ describe('Routes Jobs', () => {
                 });
     });
   });
-
   describe('Route GET /jobs/{user}', () => {
     it('Retorna um Jobs', (done) => {
       request
@@ -305,6 +305,93 @@ describe('Routes Jobs', () => {
                     // jobs
                   expect(res.body.status)
                         .to.be.eql(defaultJob01.status);
+
+                  done(err);
+                });
+    });
+  });
+  describe('Route GET /jobs/find/category/{category}', () => {
+    it('Retorna uma lista de Jobs por categoria', (done) => {
+      request
+                .get('/jobs/find/category/CONSTRUCAO')
+                .end((err, res) => {
+                  expect(res.body.fantasyName)
+                        .to.be.eql(defaultJob02.fantasyName);
+                  expect(res.body.job)
+                        .to.be.eql(defaultJob02.job);
+                  expect(res.body.category)
+                        .to.be.eql(defaultJob02.category);
+                  expect(res.body.paymentType)
+                        .to.be.eql(defaultJob02.paymentType);
+                    // monday
+                  expect(res.body.hours.monday.open)
+                        .to.be.eql(defaultJob02.hours.monday.open);
+                  expect(res.body.hours.monday.close)
+                        .to.be.eql(defaultJob02.hours.monday.close);
+                    // tuesday
+                  expect(res.body.hours.tuesday.open)
+                        .to.be.eql(defaultJob02.hours.tuesday.open);
+                  expect(res.body.hours.tuesday.close)
+                        .to.be.eql(defaultJob02.hours.tuesday.close);
+                    // wednesday
+                  expect(res.body.hours.wednesday.open)
+                        .to.be.eql(defaultJob02.hours.wednesday.open);
+                  expect(res.body.hours.wednesday.close)
+                        .to.be.eql(defaultJob02.hours.wednesday.close);
+                    // thursday
+                  expect(res.body.hours.thursday.open)
+                        .to.be.eql(defaultJob02.hours.thursday.open);
+                  expect(res.body.hours.thursday.close)
+                        .to.be.eql(defaultJob02.hours.thursday.close);
+                    // friday
+                  expect(res.body.hours.friday.open)
+                        .to.be.eql(defaultJob02.hours.friday.open);
+                  expect(res.body.hours.friday.close)
+                        .to.be.eql(defaultJob02.hours.friday.close);
+                    // saturday
+                  expect(res.body.hours.saturday.open)
+                        .to.be.eql(defaultJob02.hours.saturday.open);
+                  expect(res.body.hours.saturday.close)
+                        .to.be.eql(defaultJob02.hours.saturday.close);
+                    // sunday
+                  expect(res.body.hours.sunday.open)
+                        .to.be.eql(defaultJob02.hours.sunday.open);
+                  expect(res.body.hours.sunday.close)
+                        .to.be.eql(defaultJob02.hours.sunday.close);
+
+                    // works
+                  expect(res.body.works[0].name)
+                        .to.be.eql(defaultJob02.works[0].name);
+                  expect(res.body.works[0].description)
+                        .to.be.eql(defaultJob02.works[0].description);
+                  expect(res.body.works[0].price)
+                        .to.be.eql(defaultJob02.works[0].price);
+                  expect(res.body.works[0].attendance.type)
+                        .to.be.eql(defaultJob02.works[0].attendance.type);
+                  expect(res.body.works[0].attendance.address.street)
+                        .to.be.eql(defaultJob02.works[0].attendance.address.street);
+                  expect(res.body.works[0].attendance.address.number)
+                        .to.be.eql(defaultJob02.works[0].attendance.address.number);
+                  expect(res.body.works[0].attendance.address.district)
+                        .to.be.eql(defaultJob02.works[0].attendance.address.district);
+                  expect(res.body.works[0].attendance.address.zipcode)
+                        .to.be.eql(defaultJob02.works[0].attendance.address.zipcode);
+                  expect(res.body.works[0].attendance.address.city)
+                        .to.be.eql(defaultJob02.works[0].attendance.address.city);
+                  expect(res.body.works[0].attendance.address.state)
+                        .to.be.eql(defaultJob02.works[0].attendance.address.state);
+                  expect(res.body.works[0].tags)
+                        .to.be.eql(defaultJob02.works[0].tags);
+                  expect(res.body.works[0].feedbacks[0].user)
+                        .to.be.eql(defaultJob02.works[0].feedbacks[0].user);
+                  expect(res.body.works[0].feedbacks[0].stars)
+                        .to.be.eql(defaultJob02.works[0].feedbacks[0].stars);
+                  expect(res.body.works[0].feedbacks[0].comment)
+                        .to.be.eql(defaultJob02.works[0].feedbacks[0].comment);
+
+                    // jobs
+                  expect(res.body.status)
+                        .to.be.eql(defaultJob02.status);
 
                   done(err);
                 });

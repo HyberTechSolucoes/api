@@ -4,46 +4,54 @@
 import JobsController from '../controllers/jobs';
 
 export default (app) => {
-  const jobsController = new JobsController(app.datasource.models.Jobs);
-  app.route('/jobs')
+    const jobsController = new JobsController(app.datasource.models.Jobs);
+    app.route('/jobs')
         .get((req, res) => {
-          jobsController.getAll()
+            jobsController.getAll()
                 .then((response) => {
-                  res.status(response.statusCode);
-                  res.json(response.data);
+                    res.status(response.statusCode);
+                    res.json(response.data);
                 });
         })
         .post((req, res) => {
-          jobsController.create(req.body)
+            jobsController.create(req.body)
                 .then((response) => {
-                  res.status(response.statusCode);
-                  res.json(response.data);
+                    res.status(response.statusCode);
+                    res.json(response.data);
                 });
         });
 
-  app.route('/jobs/:user')
+    app.route('/jobs/:user')
         .get((req, res) => {
-          jobsController.getbyUserId(req.params)
+            jobsController.getbyUserId(req.params)
                 .then((response) => {
-                  res.status(response.statusCode);
-                  res.json(response.data);
+                    res.status(response.statusCode);
+                    res.json(response.data);
                 });
         })
         .put((req, res) => {
-          jobsController.update(req.params, req.body)
+            jobsController.update(req.params, req.body)
                 .then((response) => {
-                  res.status(response.statusCode);
-                  res.json(response.data);
+                    res.status(response.statusCode);
+                    res.json(response.data);
                 });
         })
         .delete((req, res) => {
-          jobsController.disable(req.params)
+            jobsController.disable(req.params)
                 .then(response => res.sendStatus(response.statusCode));
         });
 
     app.route('/jobs/find/category/:category')
         .get((req, res) => {
             jobsController.getAllByCategory(req.params)
+                .then((response) => {
+                    res.status(response.statusCode);
+                    res.json(response.data);
+                });
+        });
+    app.route('/jobs/find/category/:category/filters')
+        .get((req, res) => {
+            jobsController.getAllByCategoryWithFilters(req.params, req.query)
                 .then((response) => {
                     res.status(response.statusCode);
                     res.json(response.data);
