@@ -43,15 +43,15 @@ export default (app) => {
 
     app.route('/jobs/find/category/:category')
         .get((req, res) => {
-            jobsController.getAllByCategory(req.params)
+            jobsController.getAllByCategory(req.params, req.query)
                 .then((response) => {
                     res.status(response.statusCode);
                     res.json(response.data);
                 });
         });
-    app.route('/jobs/find/category/:category/filters')
+    app.route('/jobs/find/works/:name')
         .get((req, res) => {
-            jobsController.getAllByCategoryWithFilters(req.params, req.query)
+            jobsController.getAllByWorks(req.params, req.query)
                 .then((response) => {
                     res.status(response.statusCode);
                     res.json(response.data);

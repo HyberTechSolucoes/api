@@ -167,22 +167,7 @@ describe('Routes Requests', () => {
                 });
     });
   });
-  describe('Route PUT /jobs/{user}', () => {
-    it('Atualiza um Job', (done) => {
-      const updateJob = {
-        fantasyName: 'fantasyName update',
-      };
 
-      request
-                .put('/jobs/5921ea44f28eca1caba16c5c')
-                .send(updateJob)
-                .end((err, res) => {
-                  expect(res.body).to.be.eql({ ok: 1, nModified: 1, n: 1 });
-
-                  done(err);
-                });
-    });
-  });
   describe('Route PUT /requests/{user}', () => {
     it('Atualiza um Requests', (done) => {
       const updateRequest = {
