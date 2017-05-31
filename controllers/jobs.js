@@ -34,11 +34,12 @@ class JobsController {
     }
     getAllByWorks(params, query) {
         return this.Jobs.find({
-            works: [{
-                name: params.name
-            }]
+            works: {
+                $elemMatch: {
+                    name: new RegExp(params.name, "i")
+                }
+            }
         })
-            // .sort(query)
             .then(result => defaultResponse(result))
             .catch(error => errorResponse(error.message));
     }

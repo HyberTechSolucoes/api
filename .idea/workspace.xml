@@ -4,246 +4,7 @@
     <list default="true" id="a8f89e63-faa4-4d4d-9022-6e14db579fa4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/jobs.js" afterPath="$PROJECT_DIR$/controllers/jobs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/config/autoconfig.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/config/autoconfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/config/config-file.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/config/config-file.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/config/config-initializer.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/config/config-initializer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/config/config-ops.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/config/config-ops.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/config/config-rule.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/config/config-rule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/config/config-validator.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/config/config-validator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/config/environments.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/config/environments.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/config/plugins.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/config/plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/checkstyle.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/checkstyle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/codeframe.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/codeframe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/compact.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/compact.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/html-template-message.html" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/html-template-message.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/html-template-page.html" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/html-template-page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/html-template-result.html" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/html-template-result.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/html.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/html.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/jslint-xml.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/jslint-xml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/json.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/json.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/junit.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/junit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/stylish.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/stylish.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/table.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/tap.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/tap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/unix.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/unix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/visualstudio.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/formatters/visualstudio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/internal-rules/.eslintrc.yml" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/internal-rules/.eslintrc.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/internal-rules/internal-consistent-docs-description.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/internal-rules/internal-consistent-docs-description.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/internal-rules/internal-no-invalid-meta.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/internal-rules/internal-no-invalid-meta.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/.eslintrc.yml" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/.eslintrc.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/accessor-pairs.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/accessor-pairs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/array-bracket-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/array-bracket-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/array-callback-return.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/array-callback-return.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/arrow-body-style.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/arrow-body-style.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/arrow-parens.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/arrow-parens.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/arrow-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/arrow-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/block-scoped-var.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/block-scoped-var.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/block-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/block-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/brace-style.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/brace-style.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/callback-return.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/callback-return.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/camelcase.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/camelcase.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/capitalized-comments.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/capitalized-comments.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/class-methods-use-this.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/class-methods-use-this.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/comma-dangle.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/comma-dangle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/comma-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/comma-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/comma-style.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/comma-style.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/complexity.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/complexity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/computed-property-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/computed-property-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/consistent-return.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/consistent-return.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/consistent-this.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/consistent-this.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/constructor-super.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/constructor-super.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/curly.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/curly.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/default-case.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/default-case.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/dot-location.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/dot-location.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/dot-notation.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/dot-notation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/eol-last.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/eol-last.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/eqeqeq.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/eqeqeq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/func-call-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/func-call-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/func-name-matching.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/func-name-matching.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/func-names.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/func-names.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/func-style.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/func-style.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/generator-star-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/generator-star-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/global-require.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/global-require.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/guard-for-in.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/guard-for-in.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/handle-callback-err.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/handle-callback-err.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/id-blacklist.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/id-blacklist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/id-length.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/id-length.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/id-match.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/id-match.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/indent.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/indent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/init-declarations.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/init-declarations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/jsx-quotes.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/jsx-quotes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/key-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/key-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/keyword-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/keyword-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/line-comment-position.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/line-comment-position.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/linebreak-style.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/linebreak-style.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/lines-around-comment.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/lines-around-comment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/lines-around-directive.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/lines-around-directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-depth.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-depth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-len.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-len.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-lines.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-lines.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-nested-callbacks.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-nested-callbacks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-params.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-params.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-statements-per-line.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-statements-per-line.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-statements.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/max-statements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/multiline-ternary.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/multiline-ternary.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/new-cap.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/new-cap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/new-parens.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/new-parens.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/newline-after-var.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/newline-after-var.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/newline-before-return.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/newline-before-return.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/newline-per-chained-call.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/newline-per-chained-call.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-alert.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-array-constructor.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-array-constructor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-await-in-loop.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-await-in-loop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-bitwise.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-bitwise.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-caller.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-caller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-case-declarations.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-case-declarations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-catch-shadow.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-catch-shadow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-class-assign.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-class-assign.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-compare-neg-zero.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-compare-neg-zero.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-cond-assign.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-cond-assign.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-confusing-arrow.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-confusing-arrow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-console.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-console.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-const-assign.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-const-assign.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-constant-condition.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-constant-condition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-continue.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-continue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-control-regex.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-control-regex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-debugger.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-debugger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-delete-var.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-delete-var.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-div-regex.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-div-regex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-dupe-args.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-dupe-args.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-dupe-class-members.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-dupe-class-members.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-dupe-keys.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-dupe-keys.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-duplicate-case.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-duplicate-case.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-duplicate-imports.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-duplicate-imports.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-else-return.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-else-return.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-empty-character-class.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-empty-character-class.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-empty-function.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-empty-function.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-empty-pattern.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-empty-pattern.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-empty.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-empty.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-eq-null.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-eq-null.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-eval.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-eval.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-ex-assign.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-ex-assign.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-extend-native.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-extend-native.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-extra-bind.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-extra-bind.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-multi-spaces.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-multi-spaces.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-restricted-syntax.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-restricted-syntax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-return-assign.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-return-assign.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-return-await.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-return-await.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-script-url.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-script-url.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-self-assign.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-self-assign.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-self-compare.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-self-compare.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-sequences.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-sequences.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-shadow-restricted-names.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-shadow-restricted-names.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-shadow.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-shadow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-spaced-func.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-spaced-func.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-sparse-arrays.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-sparse-arrays.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-sync.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-sync.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-tabs.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-tabs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-template-curly-in-string.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-template-curly-in-string.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-ternary.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-ternary.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-this-before-super.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-this-before-super.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-throw-literal.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-throw-literal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-trailing-spaces.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-trailing-spaces.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-undef-init.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-undef-init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-undef.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-undef.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-undefined.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-undefined.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-underscore-dangle.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-underscore-dangle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unexpected-multiline.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unexpected-multiline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unmodified-loop-condition.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unmodified-loop-condition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unneeded-ternary.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unneeded-ternary.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unreachable.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unreachable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unsafe-finally.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unsafe-finally.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unsafe-negation.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unsafe-negation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unused-expressions.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unused-expressions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unused-labels.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unused-labels.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unused-vars.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-unused-vars.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-use-before-define.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-use-before-define.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-call.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-call.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-computed-key.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-computed-key.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-concat.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-concat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-constructor.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-constructor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-escape.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-escape.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-rename.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-rename.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-return.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-useless-return.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-var.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-var.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-void.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-void.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-warning-comments.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-warning-comments.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-whitespace-before-property.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-whitespace-before-property.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-with.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/no-with.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/nonblock-statement-body-position.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/nonblock-statement-body-position.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/object-curly-newline.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/object-curly-newline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/object-curly-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/object-curly-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/object-property-newline.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/object-property-newline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/object-shorthand.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/object-shorthand.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/one-var-declaration-per-line.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/one-var-declaration-per-line.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/one-var.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/one-var.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/operator-assignment.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/operator-assignment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/operator-linebreak.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/operator-linebreak.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/padded-blocks.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/padded-blocks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-arrow-callback.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-arrow-callback.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-const.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-const.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-destructuring.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-destructuring.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-numeric-literals.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-numeric-literals.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-promise-reject-errors.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-promise-reject-errors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-reflect.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-reflect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-rest-params.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-rest-params.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-spread.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-spread.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-template.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/prefer-template.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/quote-props.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/quote-props.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/quotes.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/quotes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/radix.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/radix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/require-await.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/require-await.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/require-jsdoc.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/require-jsdoc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/require-yield.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/require-yield.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/rest-spread-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/rest-spread-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/semi-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/semi-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/semi.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/semi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/sort-imports.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/sort-imports.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/sort-keys.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/sort-keys.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/sort-vars.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/sort-vars.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/space-before-blocks.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/space-before-blocks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/space-before-function-paren.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/space-before-function-paren.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/space-in-parens.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/space-in-parens.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/space-infix-ops.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/space-infix-ops.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/space-unary-ops.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/space-unary-ops.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/spaced-comment.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/spaced-comment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/strict.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/strict.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/symbol-description.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/symbol-description.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/template-curly-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/template-curly-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/unicode-bom.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/unicode-bom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/use-isnan.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/use-isnan.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/valid-jsdoc.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/valid-jsdoc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/valid-typeof.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/valid-typeof.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/vars-on-top.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/vars-on-top.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/wrap-iife.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/wrap-iife.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/wrap-regex.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/wrap-regex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/yield-star-spacing.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/yield-star-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/testers/event-generator-tester.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/testers/event-generator-tester.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/testers/rule-tester.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/testers/rule-tester.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/backward-token-comment-cursor.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/backward-token-comment-cursor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/backward-token-cursor.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/backward-token-cursor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/cursor.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/cursor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/cursors.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/cursors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/decorative-cursor.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/decorative-cursor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/filter-cursor.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/filter-cursor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/forward-token-comment-cursor.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/forward-token-comment-cursor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/forward-token-cursor.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/forward-token-cursor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/index.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/limit-cursor.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/limit-cursor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/padded-token-cursor.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/padded-token-cursor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/skip-cursor.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/skip-cursor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/utils.js" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/token-store/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/messages/extend-config-missing.txt" afterPath="$PROJECT_DIR$/node_modules/eslint/messages/extend-config-missing.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/messages/no-config-found.txt" afterPath="$PROJECT_DIR$/node_modules/eslint/messages/no-config-found.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/messages/plugin-missing.txt" afterPath="$PROJECT_DIR$/node_modules/eslint/messages/plugin-missing.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/messages/whitespace-found.txt" afterPath="$PROJECT_DIR$/node_modules/eslint/messages/whitespace-found.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/node_modules/user-home/index.js" afterPath="$PROJECT_DIR$/node_modules/eslint/node_modules/user-home/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/node_modules/user-home/license" afterPath="$PROJECT_DIR$/node_modules/eslint/node_modules/user-home/license" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/node_modules/user-home/package.json" afterPath="$PROJECT_DIR$/node_modules/eslint/node_modules/user-home/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/eslint/node_modules/user-home/readme.md" afterPath="$PROJECT_DIR$/node_modules/eslint/node_modules/user-home/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/jobs.js" afterPath="$PROJECT_DIR$/routes/jobs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/integration/routes/jobs.js" afterPath="$PROJECT_DIR$/test/integration/routes/jobs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/integration/routes/requests.js" afterPath="$PROJECT_DIR$/test/integration/routes/requests.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -264,8 +25,8 @@
       <file leaf-file-name="jobs.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/jobs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+            <state relative-caret-position="1020">
+              <caret line="51" column="37" lean-forward="false" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -274,8 +35,8 @@
       <file leaf-file-name="jobs.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/jobs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="220">
+              <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding>
                 <element signature="e#145#174#0" expanded="false" />
                 <element signature="e#265#288#0" expanded="false" />
@@ -283,26 +44,10 @@
                 <element signature="n#!!block;n#getAll#0;n#JobsController#0" expanded="false" />
                 <element signature="n#!!block;n#getbyUserId#0;n#JobsController#0" expanded="false" />
                 <element signature="n#!!block;n#getAllByCategory#0;n#JobsController#0" expanded="false" />
+                <element signature="n#!!block;n#getAllByWorks#0;n#JobsController#0" expanded="false" />
                 <element signature="n#!!block;n#create#0;n#JobsController#0" expanded="false" />
                 <element signature="n#!!block;n#update#0;n#JobsController#0" expanded="false" />
                 <element signature="n#!!block;n#disable#0;n#JobsController#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jobs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/integration/routes/jobs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="402" column="63" lean-forward="false" selection-start-line="402" selection-start-column="63" selection-end-line="402" selection-end-column="63" />
-              <folding>
-                <element signature="e#3749#8614#0" expanded="false" />
-                <element signature="e#8662#13441#0" expanded="false" />
-                <element signature="e#13515#18432#0" expanded="false" />
-                <element signature="e#23515#30430#0" expanded="false" />
-                <element signature="e#30479#30915#0" expanded="false" />
-                <element signature="e#30967#31287#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -478,92 +223,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="integration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="integration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -707,7 +370,8 @@
       <workItem from="1495756575154" duration="4942000" />
       <workItem from="1495980473941" duration="708000" />
       <workItem from="1495981217253" duration="3948000" />
-      <workItem from="1496102986684" duration="4461000" />
+      <workItem from="1496102986684" duration="6896000" />
+      <workItem from="1496198437834" duration="1621000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1495145491022</created>
@@ -758,11 +422,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495978984003</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Método de encontrar servicos pelo nome">
+      <created>1496107522671</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1496107522671</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159844000" />
+    <option name="totallyTimeSpent" value="163900000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -775,16 +446,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21596244" sideWeight="0.49144253" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21596244" sideWeight="0.49144253" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.84210527" sideWeight="0.5086072" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5758514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960877" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14788732" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.84365326" sideWeight="0.4913928" order="10" side_tool="false" content_ui="tabs" x="65" y="24" width="1301" height="744" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54953563" sideWeight="0.4913928" order="10" side_tool="false" content_ui="tabs" x="65" y="24" width="1301" height="744" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22925764" sideWeight="0.50855744" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -849,11 +519,12 @@
     <MESSAGE value="API para Jobs completa e testada" />
     <MESSAGE value="Traducao" />
     <MESSAGE value="Apos formatacao" />
-    <option name="LAST_COMMIT_MESSAGE" value="Apos formatacao" />
+    <MESSAGE value="Método de encontrar servicos pelo nome" />
+    <option name="LAST_COMMIT_MESSAGE" value="Método de encontrar servicos pelo nome" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1143,33 +814,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/jobs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="51" column="37" lean-forward="false" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/integration/routes/jobs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="402" column="63" lean-forward="false" selection-start-line="402" selection-start-column="63" selection-end-line="402" selection-end-column="63" />
+        <state relative-caret-position="2880">
+          <caret line="404" column="0" lean-forward="false" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
           <folding>
             <element signature="e#3749#8614#0" expanded="false" />
             <element signature="e#8662#13441#0" expanded="false" />
             <element signature="e#13515#18432#0" expanded="false" />
-            <element signature="e#23515#30430#0" expanded="false" />
-            <element signature="e#30479#30915#0" expanded="false" />
-            <element signature="e#30967#31287#0" expanded="false" />
+            <element signature="e#23448#30363#0" expanded="false" />
+            <element signature="e#30412#30848#0" expanded="false" />
+            <element signature="e#30900#31220#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/jobs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/jobs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="220">
+          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding>
             <element signature="e#145#174#0" expanded="false" />
             <element signature="e#265#288#0" expanded="false" />
@@ -1177,6 +848,7 @@
             <element signature="n#!!block;n#getAll#0;n#JobsController#0" expanded="false" />
             <element signature="n#!!block;n#getbyUserId#0;n#JobsController#0" expanded="false" />
             <element signature="n#!!block;n#getAllByCategory#0;n#JobsController#0" expanded="false" />
+            <element signature="n#!!block;n#getAllByWorks#0;n#JobsController#0" expanded="false" />
             <element signature="n#!!block;n#create#0;n#JobsController#0" expanded="false" />
             <element signature="n#!!block;n#update#0;n#JobsController#0" expanded="false" />
             <element signature="n#!!block;n#disable#0;n#JobsController#0" expanded="false" />

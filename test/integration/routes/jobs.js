@@ -400,9 +400,8 @@ describe('Routes Jobs', () => {
     describe('Route GET /jobs/find/works/{name}/filters', () => {
         it('Retorna uma lista de Jobs por works', (done) => {
             request
-                .get('/jobs/find/works/Conserto de encanamentos/?name=1')
+                .get('/jobs/find/works/Conserto de /?name=1')
                 .end((err, res) => {
-                console.log(JSON.stringify(res.body));
                     expect(res.body[0].fantasyName)
                         .to.be.eql(defaultJob02.fantasyName);
                     expect(res.body[0].job)
