@@ -1,7 +1,7 @@
 /**
  * Created by kennedy on 14/05/17.
  */
-import UsersController from '../../../controllers/users';
+import UsersController from '../../../dev/controllers/users';
 
 describe('Controllers: Users', () => {
   describe('Pega todos User: getAll()', () => {

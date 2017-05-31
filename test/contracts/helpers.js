@@ -5,7 +5,7 @@ import supertest from 'supertest';
 import chai from 'chai';
 import Joi from 'joi';
 import JoiAssert from 'joi-assert';
-import app from '../../app';
+import app from '../../dev/app';
 
 global.app = app;
 global.request = supertest(app);

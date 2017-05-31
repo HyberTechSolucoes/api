@@ -1,7 +1,7 @@
 /**
  * Created by kennedy on 14/05/17.
  */
-import JobsController from '../../../controllers/jobs';
+import JobsController from '../../../dev/controllers/jobs';
 
 describe('Controllers: Jobs', () => {
   describe('Pega todos Job: getAll()', () => {

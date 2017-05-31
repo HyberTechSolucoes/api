@@ -3,7 +3,7 @@
  */
 import supertest from 'supertest';
 import chai from 'chai';
-import app from '../../app';
+import app from '../../dev/app';
 
 global.app = app;
 global.request = supertest(app);
