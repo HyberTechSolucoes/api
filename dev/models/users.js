@@ -2,64 +2,78 @@
  * Created by kennedy on 13/05/17.
  */
 export default mongoose => mongoose.model('users', new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-  },
-  email: {
-    type: String,
-    required: true,
-    index: {
-      unique: true,
+    name: {
+        type: String,
+        required: true,
     },
-  },
-  password: {
-    type: String,
-    required: true,
-  },
-  birthday: {
-    type: Date,
-  },
-  address: [{
-    street: {
-      type: String,
+    email: {
+        type: String,
+        required: true,
+        index: {
+            unique: true,
+        },
     },
-    number: {
-      type: Number,
+    password: {
+        type: String,
+        required: true,
     },
-    district: {
-      type: String,
+    facebook: {
+        id: {
+            type: String,
+        },
+        token: {
+            type: String,
+        },
+        name: {
+            type: String,
+        },
+        email: {
+            type: String,
+        }
     },
-    zipcode: {
-      type: Number,
+    birthday: {
+        type: Date,
     },
-    city: {
-      type: String,
+    address: [{
+        street: {
+            type: String,
+        },
+        number: {
+            type: Number,
+        },
+        district: {
+            type: String,
+        },
+        zipcode: {
+            type: Number,
+        },
+        city: {
+            type: String,
+        },
+        state: {
+            type: String,
+        },
+    }, {
+        timestamps: true,
+    }],
+    devices: [{
+        type: {
+            type: String,
+            enum: ['ANDROID', 'IOS'],
+        },
+        token: {
+            type: String,
+        },
+        lastAcess: {
+            type: Date,
+        },
+    }, {
+        timestamps: true,
+    }],
+    active: {
+        type: Boolean,
+        default: true,
     },
-    state: {
-      type: String,
-    },
-  }, {
-    timestamps: true,
-  }],
-  devices: [{
-    type: {
-      type: String,
-      enum: ['ANDROID', 'IOS'],
-    },
-    token: {
-      type: String,
-    },
-    lastAcess: {
-      type: Date,
-    },
-  }, {
-    timestamps: true,
-  }],
-  active: {
-    type: Boolean,
-    default: true,
-  },
 }, {
-  timestamps: true,
+    timestamps: true,
 }));

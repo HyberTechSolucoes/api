@@ -1,7 +1,7 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _express = require('express');
@@ -11,6 +11,14 @@ var _express2 = _interopRequireDefault(_express);
 var _bodyParser = require('body-parser');
 
 var _bodyParser2 = _interopRequireDefault(_bodyParser);
+
+var _passport = require('passport');
+
+var _passport2 = _interopRequireDefault(_passport);
+
+var _passportFacebook = require('passport-facebook');
+
+var _passportFacebook2 = _interopRequireDefault(_passportFacebook);
 
 var _config = require('./config/config');
 
@@ -48,8 +56,22 @@ app.datasource = (0, _datasource2.default)(app);
 app.set('port', 3000);
 app.use(_bodyParser2.default.json());
 
+_passport2.default.use(new _passportFacebook2.default({
+    clientID: '318873928552846',
+    clientSecret: '3537143b5afe2ee42a0bb04bc0823d17',
+    callbackURL: "http://localhost:3000/auth/facebook/callback"
+}, function (accessToken, refreshToken, profile, cb) {
+    console.log('accessToken', accessToken);
+    console.log('refreshToken', refreshToken);
+    console.log('profile', profile);
+    console.log('cb', cb);
+    User.findOrCreate({ facebookId: profile.id }, function (err, user) {
+        return cb(err, user);
+    });
+}));
+
 // Rotas
-(0, _index2.default)(app);
+(0, _index2.default)(app, _passport2.default);
 (0, _users2.default)(app);
 (0, _jobs2.default)(app);
 (0, _requests2.default)(app);
