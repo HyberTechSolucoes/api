@@ -6,16 +6,36 @@ export default mongoose => mongoose.model('users', new mongoose.Schema({
         type: String,
         required: true,
     },
-    email: {
-        type: String,
-        required: true,
-        index: {
-            unique: true,
+
+    local: {
+        email: {
+            type: String,
+            // required: true,
+            index: {
+                unique: true,
+            },
         },
+        password: {
+            type: String,
+            required: true,
+        }
     },
-    password: {
-        type: String,
-        required: true,
+    google: {
+        id: {
+            type: String,
+        },
+        token: {
+            type: String,
+        },
+        name: {
+            type: String,
+        },
+        email: {
+            type: String,
+            index: {
+                unique: true,
+            },
+        },
     },
     facebook: {
         id: {
@@ -29,8 +49,12 @@ export default mongoose => mongoose.model('users', new mongoose.Schema({
         },
         email: {
             type: String,
-        }
+            index: {
+                unique: true,
+            },
+        },
     },
+
     birthday: {
         type: Date,
     },
