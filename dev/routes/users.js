@@ -25,8 +25,9 @@ export default (app) => {
         .get((req, res) => {
             if (req.params.origem === "google"){
                 // Busca por email na origem GOOGLE
+                console.log('Google');
                 usersController.getbyEmail({
-                    local: {
+                    google: {
                         email: req.params.email
                     }
                 })
@@ -37,8 +38,9 @@ export default (app) => {
 
             } else if (req.params.origem === "facebook"){
                 // Busca por email na origem FACEBOOK
+                console.log('Facebook');
                 usersController.getbyEmail({
-                    local: {
+                    facebook: {
                         email: req.params.email
                     }
                 })
@@ -49,6 +51,7 @@ export default (app) => {
 
             } else {
                 // Busca por email na origem LOCAL
+                console.log('Local');
                 usersController.getbyEmail({
                     local: {
                         email: req.params.email
