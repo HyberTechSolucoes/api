@@ -11,7 +11,7 @@
     "test-contract": "NODE_ENV=test mocha --opts test/contracts/mocha.opts test/contracts/contracts/*.js",
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint '**/*.js' --fix ",
-    "build": "rm -rf prod && mkdir prod && babel dev -d prod --presets es2015",
+    "build": "rm -rf es5 && mkdir es5 && babel es6 -d es5 --presets es2015",
     "server": "NODE_ENV=prod node prod/index.js"
   },
   "repository": {
@@ -32,9 +32,6 @@
     "joi": "^10.4.2",
     "joi-assert": "0.0.3",
     "mongoose": "^4.9.8",
-    "passport": "^0.3.2",
-    "passport-facebook": "^2.1.1",
-    "passport-local": "^1.0.0",
     "testdouble": "^2.1.2"
   },
   "devDependencies": {

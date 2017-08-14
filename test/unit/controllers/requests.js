@@ -1,7 +1,7 @@
 /**
  * Created by kennedy on 25/05/17.
  */
-import RequestesController from '../../../dev/controllers/requests';
+import RequestesController from '../../../es6/controllers/requests';
 
 describe('Controllers: Requestes', () => {
   describe('Pega todos Requestes: getAll()', () => {
